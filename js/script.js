@@ -56,6 +56,19 @@ tabsContainer.addEventListener("click", (e) => {
         aboutSection.querySelector(target).classList.add("active");
     }
 });
+/* -------------- Feature Tabs ----------------------- */
+const tabsContainerFeatures = document.querySelector(".feature-tabs"),
+    featureSection = document.querySelector(".feature-section");
+
+tabsContainerFeatures.addEventListener("click", (e) => {
+    if (e.target.classList.contains("tab-item-feature") && !e.target.classList.contains("active")) {
+        tabsContainerFeatures.querySelector(".active").classList.remove("active");
+        e.target.classList.add("active");
+        const target = e.target.getAttribute("data-target");
+        featureSection.querySelector(".tab-content.active").classList.remove("active");
+        featureSection.querySelector(target).classList.add("active");
+    }
+});
 /* -------------- Portfolio Item Popup ----------------------- */
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains("view-project-btn")) {

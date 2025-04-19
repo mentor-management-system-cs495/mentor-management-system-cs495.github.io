@@ -63,10 +63,10 @@
                      <h2>our CS 495 Project</h2>
                      <a href="#about" class="btn link-item">About Us</a>
                      <a href="#portfolio" class="btn link-item">Project Deliverables</a>
-                     <a href="#installment" class="nav-item link-item">How to Install Application</a>
-                     <a href="#features" class="nav-item link-item">How to Use Application</a>
-                     <a href="#modify" class="nav-item link-item">How to Modify Application</a>
-                     <a href="#faqs" class="nav-item link-item">FAQs</a></li>
+                     <a href="#installment" class="btn link-item">How to Install Application</a>
+                     <a href="#features" class="btn link-item">How to Use Application</a>
+                     <a href="#modify" class="btn link-item">How to Modify Application</a>
+                     <a href="#faqs" class="btn link-item">FAQs</a></li>
                   </div>
                   <div class="home-img">
                      <div class="img-box">
@@ -411,7 +411,7 @@
          </section>
          <!-- Portfolio Section End -->
          <!-- Features Section Start-->
-         <section class="about-section sec-padding" id="features">
+         <section class="feature-section sec-padding" id="features">
             <div class="container">
                <div class="row">
                   <div class="section-title">
@@ -438,32 +438,32 @@
                         <div class="skill-item">skill6</div>
                      </div> -->
                      <h3>Shared Student and Mentor Features</h3>
-                     <div class="about-tabs">
-                        <button type="button" class="tab-item" data-target="#oauthlogin">OAuth Login</button>
-                        <button type="button" class="tab-item" data-target="#landingpage">Landing Page - Getting Started</button>
-                     </div>
-                     <h3>Student Features</h3>
-                     <div class="about-tabs">
-                        <button type="button" class="tab-item" data-target="#HannahBio">Hannah Hazelwood</button>
-                        <button type="button" class="tab-item" data-target="#AndrewBio">Andrew Hahn</button>
-                        <button type="button" class="tab-item" data-target="#ManjilaBio">Manjila Singh</button>
-                        <button type="button" class="tab-item" data-target="#GregoryBio">Gregory Nothnagel</button>
-                        <button type="button" class="tab-item" data-target="#AndrewBio">Andrew Hahn</button>
-                     </div>
-                     <h3>Mentor Features</h3>
-                     <div class="about-tabs">
-                        <button type="button" class="tab-item" data-target="#HannahBio">Hannah Hazelwood</button>
-                        <button type="button" class="tab-item" data-target="#AndrewBio">Andrew Hahn</button>
-                        <button type="button" class="tab-item" data-target="#ManjilaBio">Manjila Singh</button>
-                        <button type="button" class="tab-item" data-target="#GregoryBio">Gregory Nothnagel</button>
-                        <button type="button" class="tab-item" data-target="#AndrewBio">Andrew Hahn</button>
-                     </div>
-                     <h3>Admin Features</h3>
-                     <div class="about-tabs">
-                        <button type="button" class="tab-item" data-target="#HannahBio">Hannah Hazelwood</button>
-                        <button type="button" class="tab-item" data-target="#AndrewBio">Andrew Hahn</button>
-                        <button type="button" class="tab-item" data-target="#ManjilaBio">Manjila Singh</button>
-                        <button type="button" class="tab-item" data-target="#GregoryBio">Gregory Nothnagel</button>
+                     <div class="feature-tabs">
+                        <button type="button" class="tab-item-feature active" data-target="#oauthlogin">OAuth Login</button>
+                        <button type="button" class="tab-item-feature" data-target="#landingpage">Landing Page - Getting Started</button>
+                     <!-- </div> -->
+                        <h3>Student Features</h3>
+                     <!-- <div class="feature-tabs"> -->
+                        <button type="button" class="tab-item-feature" data-target="#meetMyMentor">Meet My Mentor Page</button>
+                        <button type="button" class="tab-item-feature" data-target="#mentorDirectory">Mentor Directory Page</button>
+                        <button type="button" class="tab-item-feature" data-target="changeMentor">Change Mentor Request</button>
+                        <button type="button" class="tab-item-feature" data-target="#logMeeting">Log Meeting Page</button>
+                        <button type="button" class="tab-item-feature" data-target="#studentProfile">Profile Page</button>
+                     <!-- </div> -->
+                        <h3>Mentor Features</h3>
+                     <!-- <div class="feature-tabs"> -->
+                        <button type="button" class="tab-item-feature" data-target="#allStudents">View All Students</button>
+                        <button type="button" class="tab-item-feature" data-target="#myStudents">View My Students</button>
+                        <button type="button" class="tab-item-feature" data-target="#viewMeetings">View Meeting Logs</button>
+                        <button type="button" class="tab-item-feature" data-target="#mentorNotes">Add Mentor Notes to Meeting Log</button>
+                        <button type="button" class="tab-item-feature" data-target="#mentorProfile">Profile Page</button>
+                     <!-- </div> -->
+                        <h3>Admin Features</h3>
+                     <!-- <div class="feature-tabs"> -->
+                        <button type="button" class="tab-item-feature" data-target="#adminLogin">Admin Login</button>
+                        <button type="button" class="tab-item-feature" data-target="#viewDb">View Database</button>
+                        <button type="button" class="tab-item-feature" data-target="#crud">CRUD Operations</button>
+                        <button type="button" class="tab-item-feature" data-target="#csvUpload">CSV Batch Student Upload</button>
                      </div>
                      <!-- OAuth Section Start -->
                      <div class="tab-content active" id="oauthlogin">
@@ -475,8 +475,7 @@
                                  </div>
                                  <div class="contact-info-item">
                                     <h3>Bio</h3>
-                                    <p>Hannah Hazelwood is a senior at the University of Alabama pursuing an undergraduate degree in computer science with a minor in mathematics.
-                                       She is also currently pursuing her MBA...
+                                    <p>TEST
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
@@ -518,8 +517,8 @@
                         </div>
                      </div>
                      <!-- landingpage Section End -->
-                      <!-- Manjila Section Start -->
-                     <div class="tab-content" id="ManjilaBio">
+                      <!-- Meet My Mentor Section Start -->
+                     <div class="tab-content" id="meetMyMentor">
                         <div class="timeline">
                            <div class="row">
                               <div class="contact-info">
@@ -543,9 +542,9 @@
                            </div>
                         </div>
                      </div>
-                     <!-- Manjila Section End -->
-                     <!-- Gregory Section Start -->
-                     <div class="tab-content" id="GregoryBio">
+                     <!-- Meet My Mentor Section End -->
+                     <!-- Mentor Directory Section Start -->
+                     <div class="tab-content" id="mentorDirectory">
                         <div class="timeline">
                            <div class="row">
                               <div class="contact-info">
@@ -569,9 +568,9 @@
                            </div>
                         </div>
                      </div>
-                     <!-- Gregory Section End -->
-                      <!-- Hannah Section Start -->
-                     <div class="tab-content active" id="HannahBio">
+                     <!-- Mentor Directory Section End -->
+                      <!-- Change Mentor Request Section Start -->
+                     <div class="tab-content" id="changeMentor">
                         <div class="timeline">
                            <div class="row">
                               <div class="contact-info">
@@ -596,9 +595,9 @@
                            </div>
                         </div>
                      </div>
-                     <!-- Hannah Section End -->
-                     <!-- Andrew Section Start -->
-                     <div class="tab-content" id="AndrewBio">
+                     <!-- changeMentor Section End -->
+                     <!-- Log Meeting Section Start -->
+                     <div class="tab-content" id="logMeeting">
                         <div class="timeline">
                            <div class="row">
                               <div class="contact-info">
@@ -606,25 +605,53 @@
                                     <img src="img/andy_headshot.JPG" alt="andrew-headshot">
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Andrew is a senior computer science major at the University of Alabama. He is currently pursuing both his bachelors and masters and is planning to graduate in May 2025.
+                                    <h3>Where to Find</h3>
+                                    <p>Access using the navigation bar and click “Log a Meeting” in the student view. Or, when logged in as a student, can access at the URL ending, :3000/student/meeting-log (example: https://10.8.0.56:3000/student/meeting-log)
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a>
+                                    <h3>How to Use</h3>
+                                    <ol>
+                                       <li>
+                                          <p>A student should use this page to fill out a form to log any meetings between a mentor and mentee.</p>
+                                       </li>
+                                       <li>
+                                          <p>The form has the following fields: email (text), preferred name (text), CWID (text, 8-character limit), major (dropdown select - computer science or cybersecurity), minor (text), student notes (text), interest/meeting summary (multi-select)  </p>
+                                          
+                                          <p>Note that the interest/meeting summary acts as a simple summary of what was discussed in the meeting (ex. Internships, research opportunities, time management etc.) </p>
+                                          
+                                       </li>
+                                       <li>
+                                          <p>After navigating to the form, the form should be pre-filled with student's information. The student can make edits to their major or minor if something has changed, then they can fill out the fields of the form giving details about their meeting.  </p>
+                                       </li>
+                                       <li>
+                                          <p>When all information is inputted, a student will use the submit button to submit the form. All fields are required. On successful submission, the student will be redirected to the landing page. Submission of this form will add an entry to the meeting-log table in the database.  </p>
+                                       </li>
+                                       <li>
+                                          <p>If any information related to a student is changed in the form (preferred name, major, minor etc) the student table will be updated to reflect this change.  </p>
+                                       </li>
+                                    </ol>
+                                    <!-- <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a> -->
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="#https://github.com/ahahn1UA" target="_blank">https://github.com/ahahn1UA</a>
+                                    <h3>Additional Considerations</h3>
+                                       <ul>
+                                          <li>
+                                             <p>If a developer or admin is testing this page, they may have access to both the admin and the student views. In this case, the admin MUST be logged out of the admin dashboard before attempting to submit a meeting log. If not logged out, the form will not be submitted due to CSFR (Cross Site Request Forgery) checks failing. </p>
+                                          </li>
+                                          <li>
+                                             <p>The student email and student CWID fields will not be editable in this form, but they are required. With the pre-fill functionality, this should not cause issues. That being said, when a student is added, they MUST have an email and CWID associated with them.  </p>
+                                          </li>
+                                       </ul>
+                                       <!-- <a href="#https://github.com/ahahn1UA" target="_blank">https://github.com/ahahn1UA</a> -->
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <!-- Andrew Section End -->
-                      <!-- Manjila Section Start -->
-                     <div class="tab-content" id="ManjilaBio">
+                     <!-- logMeeting Section End -->
+                      <!-- student Profile Section Start -->
+                     <div class="tab-content" id="studentProfile">
                         <div class="timeline">
                            <div class="row">
                               <div class="contact-info">
@@ -648,9 +675,10 @@
                            </div>
                         </div>
                      </div>
-                     <!-- Manjila Section End -->
-                     <!-- Gregory Section Start -->
-                     <div class="tab-content" id="GregoryBio">
+                     <!-- student Proflile Section End -->
+                     <!-- MENTOR FEATURES START -->
+                     <!-- View All Students Section Start -->
+                     <div class="tab-content" id="allStudents">
                         <div class="timeline">
                            <div class="row">
                               <div class="contact-info">
@@ -674,9 +702,9 @@
                            </div>
                         </div>
                      </div>
-                     <!-- Gregory Section End -->
-                      <!-- Hannah Section Start -->
-                     <div class="tab-content active" id="HannahBio">
+                     <!-- View All Students Section End -->
+                      <!-- View My Students Section Start -->
+                     <div class="tab-content" id="myStudents">
                         <div class="timeline">
                            <div class="row">
                               <div class="contact-info">
@@ -701,9 +729,9 @@
                            </div>
                         </div>
                      </div>
-                     <!-- Hannah Section End -->
-                     <!-- Andrew Section Start -->
-                     <div class="tab-content" id="AndrewBio">
+                     <!-- View My Students Section End -->
+                     <!-- View Meeting Logs Section Start -->
+                     <div class="tab-content" id="viewMeetings">
                         <div class="timeline">
                            <div class="row">
                               <div class="contact-info">
@@ -727,9 +755,9 @@
                            </div>
                         </div>
                      </div>
-                     <!-- Andrew Section End -->
-                      <!-- Manjila Section Start -->
-                     <div class="tab-content" id="ManjilaBio">
+                     <!-- View Meeting Logs Section End -->
+                      <!-- Add Mentor Notes Section Start -->
+                     <div class="tab-content" id="mentorNotes">
                         <div class="timeline">
                            <div class="row">
                               <div class="contact-info">
@@ -753,9 +781,9 @@
                            </div>
                         </div>
                      </div>
-                     <!-- Manjila Section End -->
-                     <!-- Gregory Section Start -->
-                     <div class="tab-content" id="GregoryBio">
+                     <!-- Add Mentor Notes Section End -->
+                     <!-- Mentor Profile Section Start -->
+                     <div class="tab-content" id="mentorProfile">
                         <div class="timeline">
                            <div class="row">
                               <div class="contact-info">
@@ -779,9 +807,9 @@
                            </div>
                         </div>
                      </div>
-                     <!-- Gregory Section End -->
-                      <!-- Gregory Section Start -->
-                     <div class="tab-content" id="GregoryBio">
+                     <!-- Mentor Profile Section End -->
+                      <!-- Admin Login Section Start -->
+                     <div class="tab-content" id="adminLogin">
                         <div class="timeline">
                            <div class="row">
                               <div class="contact-info">
@@ -805,9 +833,9 @@
                            </div>
                         </div>
                      </div>
-                     <!-- Gregory Section End -->
-                      <!-- Gregory Section Start -->
-                     <div class="tab-content" id="GregoryBio">
+                     <!-- Admin Login Section End -->
+                      <!-- View Database Section Start -->
+                     <div class="tab-content" id="viewDb">
                         <div class="timeline">
                            <div class="row">
                               <div class="contact-info">
@@ -831,7 +859,59 @@
                            </div>
                         </div>
                      </div>
-                     <!-- Gregory Section End -->
+                     <!-- View Database Section End -->
+                      <!-- CRUD Section Start -->
+                      <div class="tab-content" id="crud">
+                        <div class="timeline">
+                           <div class="row">
+                              <div class="contact-info">
+                                 <div class="contact-info-item">
+                                    <img src="img/gregory-headshot.jpg" alt="gregory-headshot">
+                                 </div>
+                                 <div class="contact-info-item">
+                                    <h3>Bio</h3>
+                                    <p>Gregory is studying computer science and finance at the University of Alabama.
+                                    </p>
+                                 </div>
+                                 <div class="contact-info-item">
+                                    <h3>My LinkedIn</h3>
+                                    <a href="https://www.linkedin.com/in/gregory-nothnagel-unique-url" target="_blank">My LinkedIn</a>
+                                 </div>
+                                 <div class="contact-info-item">
+                                    <h3>My Github</h3>
+                                       <a href="https://github.com/Gregory-S-Nothnagel" target="_blank">My Github</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- CRUD Login Section End -->
+                      <!-- CSV Batch Upload Section Start -->
+                     <div class="tab-content" id="csvUpload">
+                        <div class="timeline">
+                           <div class="row">
+                              <div class="contact-info">
+                                 <div class="contact-info-item">
+                                    <img src="img/gregory-headshot.jpg" alt="gregory-headshot">
+                                 </div>
+                                 <div class="contact-info-item">
+                                    <h3>Bio</h3>
+                                    <p>Gregory is studying computer science and finance at the University of Alabama.
+                                    </p>
+                                 </div>
+                                 <div class="contact-info-item">
+                                    <h3>My LinkedIn</h3>
+                                    <a href="https://www.linkedin.com/in/gregory-nothnagel-unique-url" target="_blank">My LinkedIn</a>
+                                 </div>
+                                 <div class="contact-info-item">
+                                    <h3>My Github</h3>
+                                       <a href="https://github.com/Gregory-S-Nothnagel" target="_blank">My Github</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- CSV Batch Upload Section End -->
                      <!-- <a href="cv.pdf" target="_blank" class="btn">Download CV</a>
                      <a href="#contact" class="btn link-item">Contact Me</a> -->
                   </div>
