@@ -788,6 +788,59 @@ About Section
 }
 
 /* ------------
+Installment Section
+-------------- */
+.installment-tabs {
+	margin-top: 20px;
+}
+
+.installment-tabs .tab-item-installment {
+	padding: 2px 0;
+	background-color: transparent;
+	border: none;
+	text-transform: capitalize;
+	display: inline-block;
+	color: var(--blue-dark);
+	font-size: 20px;
+	cursor: pointer;
+	font-weight: 500;
+	margin: 0 30px 0 0;
+	position: relative;
+	opacity: 0.5;
+	transition: all 0.3s ease;
+}
+
+.installment-tabs .tab-item-installment:last-child {
+	margin: 0;
+}
+
+.installment-tabs .tab-item-installment::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 1px;
+	background-color: var(--blue-dark);
+	transition: width 0.3s ease;
+}
+
+.installment-tabs .tab-item-installment:hover::before {
+	width: 100%;
+}
+
+.installment-tabs .tab-item-installment.active::before {
+	width: 100%;
+	background-color: var(--main-color);
+}
+
+.installment-tabs .tab-item-installment.active {
+	color: var(--main-color);
+	opacity: 1;
+	cursor: auto;
+}
+
+/* ------------
 Feature Section
 -------------- */
 .feature-tabs {
@@ -835,6 +888,59 @@ Feature Section
 }
 
 .feature-tabs .tab-item-feature.active {
+	color: var(--main-color);
+	opacity: 1;
+	cursor: auto;
+}
+
+/* ------------
+Installment Section
+-------------- */
+.modify-tabs {
+	margin-top: 20px;
+}
+
+.modify-tabs .tab-item-modify {
+	padding: 2px 0;
+	background-color: transparent;
+	border: none;
+	text-transform: capitalize;
+	display: inline-block;
+	color: var(--blue-dark);
+	font-size: 20px;
+	cursor: pointer;
+	font-weight: 500;
+	margin: 0 30px 0 0;
+	position: relative;
+	opacity: 0.5;
+	transition: all 0.3s ease;
+}
+
+.modify-tabs .tab-item-modify:last-child {
+	margin: 0;
+}
+
+.modify-tabs .tab-item-modify::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 1px;
+	background-color: var(--blue-dark);
+	transition: width 0.3s ease;
+}
+
+.modify-tabs .tab-item-modify:hover::before {
+	width: 100%;
+}
+
+.modify-tabs .tab-item-modify.active::before {
+	width: 100%;
+	background-color: var(--main-color);
+}
+
+.modify-tabs .tab-item-modify.active {
 	color: var(--main-color);
 	opacity: 1;
 	cursor: auto;

@@ -56,6 +56,19 @@ tabsContainer.addEventListener("click", (e) => {
         aboutSection.querySelector(target).classList.add("active");
     }
 });
+/* -------------- Installation Tabs ----------------------- */
+const tabsContainerInstallation = document.querySelector(".installment-tabs"),
+    installationSection = document.querySelector(".installment-section");
+
+tabsContainerInstallation.addEventListener("click", (e) => {
+    if (e.target.classList.contains("tab-item-installment") && !e.target.classList.contains("active")) {
+        tabsContainerInstallation.querySelector(".active").classList.remove("active");
+        e.target.classList.add("active");
+        const target = e.target.getAttribute("data-target");
+        installationSection.querySelector(".tab-content.active").classList.remove("active");
+        installationSection.querySelector(target).classList.add("active");
+    }
+});
 /* -------------- Feature Tabs ----------------------- */
 const tabsContainerFeatures = document.querySelector(".feature-tabs"),
     featureSection = document.querySelector(".feature-section");
@@ -67,6 +80,19 @@ tabsContainerFeatures.addEventListener("click", (e) => {
         const target = e.target.getAttribute("data-target");
         featureSection.querySelector(".tab-content.active").classList.remove("active");
         featureSection.querySelector(target).classList.add("active");
+    }
+});
+/* -------------- Installation Tabs ----------------------- */
+const tabsContainerModify = document.querySelector(".modify-tabs"),
+    modifySection = document.querySelector(".modify-section");
+
+tabsContainerModify.addEventListener("click", (e) => {
+    if (e.target.classList.contains("tab-item-modify") && !e.target.classList.contains("active")) {
+        tabsContainerModify.querySelector(".active").classList.remove("active");
+        e.target.classList.add("active");
+        const target = e.target.getAttribute("data-target");
+        modifySection.querySelector(".tab-content.active").classList.remove("active");
+        modifySection.querySelector(target).classList.add("active");
     }
 });
 /* -------------- Portfolio Item Popup ----------------------- */
