@@ -426,7 +426,7 @@
                   </div> -->
                   <div class="about-text">
                      <p>
-                        Hi! We are 4 senior computer science students at the University of Alabama.    
+                        Here are instruction on how to install and deploy our application. 
                      </p>
                      <!-- <h3>Skills</h3>
                      <div class="skills">
@@ -449,21 +449,21 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
-                                    <img src="img/hannah-headshot.png" alt="hannah-headshot">
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Hannah Hazelwood is a senior at the University of Alabama pursuing an undergraduate degree in computer science with a minor in mathematics.
-                                       She is also currently pursuing her MBA...
+                                    <h3>Docker</h3>
+                                    <p> For Mac:  <a href="https://docs.docker.com/desktop/install/mac-install/" target="_blank">Install Docker Desktop on Mac</a>
+                                    </p>
+                                    <p> For Windows: <a href="https://docs.docker.com/desktop/setup/install/windows-install/#install-docker-desktop-on-windows" target="_blank">Install Docker Desktop on Windows</a>
+                                    </p>
+                                    <p> For Linux: <a href="https://docs.docker.com/desktop/setup/install/linux/" target="_blank">Install Docker Desktop on Linux</a>
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="#www.linkedin.com/in/hannah-hazelwood" target="_blank">My LinkedIn</a>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My Github!</h3>
-                                       <a href="#https://github.com/hhaze2" target="_blank">My Github</a>
+                                    <h3>Other Technologies -- Downloaded through Docker, no action needed</h3>
+                                    <p> Our Docker container will download all necessary dependencies for the project. 
+                                    </p>
+                                    <p> Our application is built with the Python Django Framework, using Python for the backend, Node.js / Express.js for the frontend, and PostgreSQL for the database.
+                                    </p>
+                                    
                                  </div>
                               </div>
                            </div>
@@ -476,20 +476,12 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
-                                    <img src="img/andy_headshot.JPG" alt="andrew-headshot">
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Andrew is a senior computer science major at the University of Alabama. He is currently pursuing both his bachelors and masters and is planning to graduate in May 2025.
+                                    <h3>Microsoft Azure</h3>
+                                    <p> You'll need to create a Microsoft Azure account if you haven't already. There should be no payment requirements. In the Microsoft Azure home page, use the search bar to search for “App registrations”. During the handoff process from our team to yours, we should have made you an owner of our app registration. The display name for our app registration is PWEB. Its client id is 3f48444e-2a9f-43c8-bd43-badbd686b6c1, but you should be able to find it by just looking for the PWEB name. If you click on that PWEB name, you should be able to search for the manage>authentication tab, or search “authentication” in the app-specific search bar (not the other search bar, there are 2). The only thing you should change here is the redirect URI’s, which you have to include every time you change IP addresses for the app. The format of the redirect URI is currently https://{IP}:8000/authapp/microsoft/callback/ 
                                     </p>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="#https://github.com/ahahn1UA" target="_blank">https://github.com/ahahn1UA</a>
+                                    <p> You can also add owners by navigating to manage>Owners (or using the app-specific search bar again)
+                                    </p>
+                                    
                                  </div>
                               </div>
                            </div>
@@ -502,20 +494,28 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
-                                    <img src="img/manjila-pic.jpeg" alt="manjila-headshot">
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>I am pursuing my Computer Science degree at the University of Alabama, along with the Accelerated Master's Program in Computer Science. I am interested in software development, data science and high-performance computing. </p>
+                                    <h3>1. Clone the Repository</h3>
+                                    <p>git clone https://github.com/manjilasingh/mentor-management-system.git  
                                     </p>
+                                    <p>open project root directory with “cd mentor-management-system"</p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="https://www.linkedin.com/in/manjilasingh/" target="_blank">My LinkedIn</a>
+                                    <h3>2. Create .env file</h3>
+                                    <p>Create the .env file inside the project root directory and add variables shown in the github README file. The values in the readme are just example values, which you can use if you like, but definitely change the passwords (obviously). And change the IP in the .env file to be the public IP of the machine you're deploying on.  
+                                    </p>
+                                    
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="https://github.com/manjilasingh" target="_blank">My Github</a>
+                                    <h3>3. Add the proper redirect URI to the Microsoft Azure app registration</h3>
+                                    <p>(see our documentation's “How to Install Software” -> “External Resources Needed” -> “Microsoft Azure”) 
+                                    </p>  
+                                 </div>
+                                 <div class="contact-info-item">
+                                    <h3>4. Run the web application</h3>
+                                    <p>use “docker-compose up --build” 
+                                       (make sure you have your docker app up and running) 
+                                    </p> 
+                                    <p>If deploying to a server, build and run the container inside the server. The IP address of the server will be used as the base URL</p> 
                                  </div>
                               </div>
                            </div>
@@ -594,17 +594,45 @@
                                     <img src="img/hannah-headshot.png" alt="hannah-headshot">
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>TEST
+                                    <h3>Where to Find</h3>
+                                    <p>Access using the navigation bar and click “Log a Meeting” in the student view. Or, when logged in as a student, can access at the URL ending, :3000/student/meeting-log (example: https://10.8.0.56:3000/student/meeting-log)
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="#www.linkedin.com/in/hannah-hazelwood" target="_blank">My LinkedIn</a>
+                                    <h3>How to Use</h3>
+                                    <ol>
+                                       <li>
+                                          <p>A student should use this page to fill out a form to log any meetings between a mentor and mentee.</p>
+                                       </li>
+                                       <li>
+                                          <p>The form has the following fields: email (text), preferred name (text), CWID (text, 8-character limit), major (dropdown select - computer science or cybersecurity), minor (text), student notes (text), interest/meeting summary (multi-select)  </p>
+                                          
+                                          <p>Note that the interest/meeting summary acts as a simple summary of what was discussed in the meeting (ex. Internships, research opportunities, time management etc.) </p>
+                                          
+                                       </li>
+                                       <li>
+                                          <p>After navigating to the form, the form should be pre-filled with student's information. The student can make edits to their major or minor if something has changed, then they can fill out the fields of the form giving details about their meeting.  </p>
+                                       </li>
+                                       <li>
+                                          <p>When all information is inputted, a student will use the submit button to submit the form. All fields are required. On successful submission, the student will be redirected to the landing page. Submission of this form will add an entry to the meeting-log table in the database.  </p>
+                                       </li>
+                                       <li>
+                                          <p>If any information related to a student is changed in the form (preferred name, major, minor etc) the student table will be updated to reflect this change.  </p>
+                                       </li>
+                                    </ol>
+                                    <!-- <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a> -->
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My Github!</h3>
-                                       <a href="#https://github.com/hhaze2" target="_blank">My Github</a>
+                                    <h3>Additional Considerations</h3>
+                                       <ul>
+                                          <li>
+                                             <p>If a developer or admin is testing this page, they may have access to both the admin and the student views. In this case, the admin MUST be logged out of the admin dashboard before attempting to submit a meeting log. If not logged out, the form will not be submitted due to CSFR (Cross Site Request Forgery) checks failing. </p>
+                                          </li>
+                                          <li>
+                                             <p>The student email and student CWID fields will not be editable in this form, but they are required. With the pre-fill functionality, this should not cause issues. That being said, when a student is added, they MUST have an email and CWID associated with them.  </p>
+                                          </li>
+                                       </ul>
+                                       <!-- <a href="#https://github.com/ahahn1UA" target="_blank">https://github.com/ahahn1UA</a> -->
                                  </div>
                               </div>
                            </div>
@@ -620,21 +648,50 @@
                                     <img src="img/andy_headshot.JPG" alt="andrew-headshot">
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Andrew is a senior computer science major at the University of Alabama. He is currently pursuing both his bachelors and masters and is planning to graduate in May 2025.
+                                    <h3>Where to Find</h3>
+                                    <p>Access using the navigation bar and click “Log a Meeting” in the student view. Or, when logged in as a student, can access at the URL ending, :3000/student/meeting-log (example: https://10.8.0.56:3000/student/meeting-log)
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a>
+                                    <h3>How to Use</h3>
+                                    <ol>
+                                       <li>
+                                          <p>A student should use this page to fill out a form to log any meetings between a mentor and mentee.</p>
+                                       </li>
+                                       <li>
+                                          <p>The form has the following fields: email (text), preferred name (text), CWID (text, 8-character limit), major (dropdown select - computer science or cybersecurity), minor (text), student notes (text), interest/meeting summary (multi-select)  </p>
+                                          
+                                          <p>Note that the interest/meeting summary acts as a simple summary of what was discussed in the meeting (ex. Internships, research opportunities, time management etc.) </p>
+                                          
+                                       </li>
+                                       <li>
+                                          <p>After navigating to the form, the form should be pre-filled with student's information. The student can make edits to their major or minor if something has changed, then they can fill out the fields of the form giving details about their meeting.  </p>
+                                       </li>
+                                       <li>
+                                          <p>When all information is inputted, a student will use the submit button to submit the form. All fields are required. On successful submission, the student will be redirected to the landing page. Submission of this form will add an entry to the meeting-log table in the database.  </p>
+                                       </li>
+                                       <li>
+                                          <p>If any information related to a student is changed in the form (preferred name, major, minor etc) the student table will be updated to reflect this change.  </p>
+                                       </li>
+                                    </ol>
+                                    <!-- <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a> -->
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="#https://github.com/ahahn1UA" target="_blank">https://github.com/ahahn1UA</a>
+                                    <h3>Additional Considerations</h3>
+                                       <ul>
+                                          <li>
+                                             <p>If a developer or admin is testing this page, they may have access to both the admin and the student views. In this case, the admin MUST be logged out of the admin dashboard before attempting to submit a meeting log. If not logged out, the form will not be submitted due to CSFR (Cross Site Request Forgery) checks failing. </p>
+                                          </li>
+                                          <li>
+                                             <p>The student email and student CWID fields will not be editable in this form, but they are required. With the pre-fill functionality, this should not cause issues. That being said, when a student is added, they MUST have an email and CWID associated with them.  </p>
+                                          </li>
+                                       </ul>
+                                       <!-- <a href="#https://github.com/ahahn1UA" target="_blank">https://github.com/ahahn1UA</a> -->
                                  </div>
                               </div>
+                              </div>
                            </div>
-                        </div>
+                        
                      </div>
                      <!-- landingpage Section End -->
                       <!-- Meet My Mentor Section Start -->
@@ -643,24 +700,35 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
-                                    <img src="img/manjila-pic.jpeg" alt="manjila-headshot">
+                                    <img src="img/features/meet-my-mentor.png" alt="meet-my-mentor-page">
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>I am pursuing my Computer Science degree at the University of Alabama, along with the Accelerated Master's Program in Computer Science. I am interested in software development, data science and high-performance computing. </p>
+                                    <h3>Where to Find</h3>
+                                    <p>You can access it from the navigation bar under “Meet my Mentor” tab. <nl></nl>
+                                        (https://10.8.0.56:3000/student/meet-my-mentor)
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="https://www.linkedin.com/in/manjilasingh/" target="_blank">My LinkedIn</a>
+                                    <h3>Purpose</h3>
+                                    <p> Allow students to view their assigned mentor's contact information.</p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="https://github.com/manjilasingh" target="_blank">My Github</a>
+                                    <h3>How to Use</h3>
+                                    <ol>
+                                       <li>
+                                          <p>The page automatically displays your assigned mentor's contact information: profile photo, full name, office hours and email address.</p>
+                                       </li>
+                                       <li>
+                                          <p>If you see an empty page, contact Dr. Monica Anderson (Anderson.cs.ua.edu) to request a mentor assignment.   </p>
+                                          
+                                       </li>
+                                    </ol>
+                                    <!-- <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a> -->
                                  </div>
                               </div>
                            </div>
                         </div>
+                        
                      </div>
                      <!-- Meet My Mentor Section End -->
                      <!-- Mentor Directory Section Start -->
@@ -669,20 +737,26 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
-                                    <img src="img/gregory-headshot.jpg" alt="gregory-headshot">
+                                    <img src="img/features/mentor-directory.png" alt="mentor-directory-page">
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Gregory is studying computer science and finance at the University of Alabama.
+                                    <h3>Where to Find</h3>
+                                    <p>You can access it in the navigation bar under “Mentor Directory”. This page is available for both mentors and students. <nl></nl>
+                                       (https://10.8.0.56:3000/student/mentor-directory) 
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="https://www.linkedin.com/in/gregory-nothnagel-unique-url" target="_blank">My LinkedIn</a>
+                                    <h3>Purpose</h3>
+                                    <p> To allow students to view all available mentors and to allow them to request a mentor change.</p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="https://github.com/Gregory-S-Nothnagel" target="_blank">My Github</a>
+                                    <h3>How to Use</h3>
+                                    <ol>
+                                       <li>
+                                          <p>Each mentor’s information is displayed in a card with their full name, title, research areas, office hours, phone number, email address and an option to request change to the mentor. </p>
+                                       </li>
+                                    </ol>
+                                    <!-- <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a> -->
                                  </div>
                               </div>
                            </div>
@@ -695,21 +769,33 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
-                                    <img src="img/hannah-headshot.png" alt="hannah-headshot">
+                                    <!-- <img src="img/features/mentor-directory.png" alt="mentor-directory-page"> -->
+                                    <p>INSERT GIF HERE</p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Hannah Hazelwood is a senior at the University of Alabama pursuing an undergraduate degree in computer science with a minor in mathematics.
-                                       She is also currently pursuing her MBA...
+                                    <h3>Where to Find</h3>
+                                    <p>You can access it by clicking “Request change to this mentor” on a mentor's profile card in the mentor directory page. <nl></nl>
+                                       (https://10.8.0.56:3000/student/mentor-directory)
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="#www.linkedin.com/in/hannah-hazelwood" target="_blank">My LinkedIn</a>
+                                    <h3>Purpose</h3>
+                                    <p> To allow students to request a mentor change. </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My Github!</h3>
-                                       <a href="#https://github.com/hhaze2" target="_blank">My Github</a>
+                                    <h3>How to Use</h3>
+                                    <ol>
+                                       <li>
+                                          <p>To request a mentor change, click on the “Request change to this mentor” link under the mentor you wish to switch to.  </p>
+                                       </li>
+                                       <li>
+                                          <p>A pop up will appear that says “You are REQUIRED to confirm that this mentor is alright with you switching to them! Send them an email if you haven't yet, BEFORE emailing administration to make the change.” Once you are sure hit Send Email. </p>
+                                       </li>
+                                       <li>
+                                          <p>Once you click on send email, it will generate a prefilled email with to: Dr. Anderson email (anderson@cs.ua.edu), subject: Mentor Change Request and email body that says “This student is requesting a mentor change to {new mentor's email address}” </p>
+                                       </li>
+                                    </ol>
+                                    <!-- <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a> -->
                                  </div>
                               </div>
                            </div>
@@ -722,7 +808,8 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
-                                    <img src="img/andy_headshot.JPG" alt="andrew-headshot">
+                                    <!-- <img src="img/andy_headshot.JPG" alt="andrew-headshot"> -->
+                                     <p>INSERT GIF</p>
                                  </div>
                                  <div class="contact-info-item">
                                     <h3>Where to Find</h3>
@@ -776,20 +863,33 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
-                                    <img src="img/manjila-pic.jpeg" alt="manjila-headshot">
+                                    <!-- <img src="img/features/mentor-directory.png" alt="mentor-directory-page"> -->
+                                    <p>INSERT GIF HERE</p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>I am pursuing my Computer Science degree at the University of Alabama, along with the Accelerated Master's Program in Computer Science. I am interested in software development, data science and high-performance computing. </p>
+                                    <h3>Where to Find</h3>
+                                    <p>Navigate to the student profile by clicking the My Profile button at the top when logged in as a student <nl></nl>
+                                       (https://10.8.0.56::3000/student/my-profile)
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="https://www.linkedin.com/in/manjilasingh/" target="_blank">My LinkedIn</a>
+                                    <h3>Purpose</h3>
+                                    <p> To allow students to update their information. </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="https://github.com/manjilasingh" target="_blank">My Github</a>
+                                    <h3>How to Use</h3>
+                                    <ol>
+                                       <li>
+                                          <p>This page allows a student to view their profile (Name, email, cwid, preferred name, major and minor)   </p>
+                                       </li>
+                                       <li>
+                                          <p>This page allows the student to edit their preferred name, major and minor  </p>
+                                       </li>
+                                       <li>
+                                          <p>To change an option, simply change the value and hit “Save Changes”  </p>
+                                       </li>
+                                    </ol>
+                                    <!-- <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a> -->
                                  </div>
                               </div>
                            </div>
@@ -803,20 +903,31 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
-                                    <img src="img/gregory-headshot.jpg" alt="gregory-headshot">
+                                    <!-- <img src="img/features/mentor-directory.png" alt="mentor-directory-page"> -->
+                                    <p>INSERT GIF HERE</p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Gregory is studying computer science and finance at the University of Alabama.
+                                    <h3>Where to Find</h3>
+                                    <p>Navigate to the all students page by hitting the all students button at the top when logged in as a student <nl></nl>
+                                       (https://10.8.0.56:3000/mentor/mentor-directory)
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="https://www.linkedin.com/in/gregory-nothnagel-unique-url" target="_blank">My LinkedIn</a>
+                                    <h3>Purpose</h3>
+                                    <p> To allow mentors to see all students in the system. </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="https://github.com/Gregory-S-Nothnagel" target="_blank">My Github</a>
+                                    <h3>How to Use</h3>
+                                    <ol>
+                                       <li>
+                                          <p>This page allows a mentor to view all the students in the system and who their mentors are </p>
+                                       </li>
+                                       <li>
+                                          <p>Clicking on a student pulls up their profile information and their meeting log </p>
+                                       </li>
+                                       
+                                    </ol>
+                                    <!-- <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a> -->
                                  </div>
                               </div>
                            </div>
@@ -829,21 +940,31 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
-                                    <img src="img/hannah-headshot.png" alt="hannah-headshot">
+                                    <!-- <img src="img/features/mentor-directory.png" alt="mentor-directory-page"> -->
+                                    <p>INSERT GIF HERE</p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Hannah Hazelwood is a senior at the University of Alabama pursuing an undergraduate degree in computer science with a minor in mathematics.
-                                       She is also currently pursuing her MBA...
+                                    <h3>Where to Find</h3>
+                                    <p>Navigate to the my students page by hitting the my students button at the top when logged in as a student<nl></nl>
+                                       (:3000/mentor/meet-my-mentor)
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="#www.linkedin.com/in/hannah-hazelwood" target="_blank">My LinkedIn</a>
+                                    <h3>Purpose</h3>
+                                    <p> To allow mentors to see all students in the system. </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My Github!</h3>
-                                       <a href="#https://github.com/hhaze2" target="_blank">My Github</a>
+                                    <h3>How to Use</h3>
+                                    <ol>
+                                       <li>
+                                          <p>This page allows a mentor to view all the students in the system and who their mentors are </p>
+                                       </li>
+                                       <li>
+                                          <p>Clicking on a student pulls up their profile information and their meeting log </p>
+                                       </li>
+                                       
+                                    </ol>
+                                    <!-- <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a> -->
                                  </div>
                               </div>
                            </div>
@@ -856,20 +977,34 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
-                                    <img src="img/andy_headshot.JPG" alt="andrew-headshot">
+                                    <!-- <img src="img/features/mentor-directory.png" alt="mentor-directory-page"> -->
+                                    <p>INSERT GIF HERE</p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Andrew is a senior computer science major at the University of Alabama. He is currently pursuing both his bachelors and masters and is planning to graduate in May 2025.
+                                    <h3>Where to Find</h3>
+                                    <p>The My Students tab in the mentor view (:3000/mentor/meet-my-mentor) or the All Students tab in the mentor view (:3000/mentor/mentor-directory)
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a>
+                                    <h3>Purpose</h3>
+                                    <p> To allow mentors to track meetings that a student participates in. </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="#https://github.com/ahahn1UA" target="_blank">https://github.com/ahahn1UA</a>
+                                    <h3>How to Use</h3>
+                                    <ol>
+                                       <li>
+                                          <p>While logged in as a mentor, visit either the All Students tab or the My Students tab</p>
+                                       </li>
+                                       <li>
+                                          <p>In either of these pages, click on a student to pull up that student's information.</p>
+                                       </li>
+                                       <li>
+                                          <p>In the modal that will pop up, there will be a section detailing details about the student. This includes the meeting logs. The modal will show the Date, Meeting/Interest Summary, Student Notes and Mentor Notes for each meeting a student has. </p>
+                                          <p>Note that all mentors can see all meeting logs for any student.</p>
+                                       </li>
+   
+                                    </ol>
+                                    <!-- <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a> -->
                                  </div>
                               </div>
                            </div>
@@ -882,20 +1017,40 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
-                                    <img src="img/manjila-pic.jpeg" alt="manjila-headshot">
+                                    <!-- <img src="img/features/mentor-directory.png" alt="mentor-directory-page"> -->
+                                    <p>INSERT GIF HERE</p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>I am pursuing my Computer Science degree at the University of Alabama, along with the Accelerated Master's Program in Computer Science. I am interested in software development, data science and high-performance computing. </p>
+                                    <h3>Where to Find</h3>
+                                    <p>The My Students tab in the mentor view (:3000/mentor/meet-my-mentor)
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="https://www.linkedin.com/in/manjilasingh/" target="_blank">My LinkedIn</a>
+                                    <h3>Purpose</h3>
+                                    <p> To allow mentors to add notes to meetings they have had with their mentees. </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="https://github.com/manjilasingh" target="_blank">My Github</a>
+                                    <h3>How to Use</h3>
+                                    <ol>
+                                       <li>
+                                          <p>While logged in as a mentor, visit the My Students tab. </p>
+                                       </li>
+                                       <li>
+                                          <p>In either of these pages, click on the student you wish to add mentor notes to.  </p>
+                                       </li>
+                                       <li>
+                                          <p>In the model, there will be a section showing all meeting logs for that student. Find the desired meeting log (you will most likely use the date to identify it) and click the pencil icon in that meeting row.   </p>
+                                          
+                                       </li>
+                                       <li>
+                                          <p>Type the desired notes and click save.  </p>
+                                       </li>
+                                       <li>
+                                          <p>The mentor notes will be updated in the database and the student modals should showcase this change automatically.</p>
+                                       </li>
+   
+                                    </ol>
+                                    <!-- <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a> -->
                                  </div>
                               </div>
                            </div>
@@ -908,20 +1063,33 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
-                                    <img src="img/gregory-headshot.jpg" alt="gregory-headshot">
+                                    <!-- <img src="img/features/mentor-directory.png" alt="mentor-directory-page"> -->
+                                    <p>INSERT GIF HERE</p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Gregory is studying computer science and finance at the University of Alabama.
+                                    <h3>Where to Find</h3>
+                                    <p>Navigate to the mentor profile by clicking the Profile button at the top when logged in as a mentor (:3000/mentor/profile) 
                                     </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="https://www.linkedin.com/in/gregory-nothnagel-unique-url" target="_blank">My LinkedIn</a>
+                                    <h3>Purpose</h3>
+                                    <p> To allow mentors to edit their information, most importantly their office hours. </p>
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="https://github.com/Gregory-S-Nothnagel" target="_blank">My Github</a>
+                                    <h3>How to Use</h3>
+                                    <ol>
+                                       <li>
+                                          <p>This page allows a mentor to view their profile (Name, email, title, research areas, office, office hours and phone) </p>
+                                       </li>
+                                       <li>
+                                          <p>This page allows the mentor to edit their title, research areas, office, office hours and phone </p>
+                                       </li>
+                                       <li>
+                                          <p>To change an option, simply change the value and hit “Save Changes”  </p>
+                                       </li>
+   
+                                    </ol>
+                                    <!-- <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a> -->
                                  </div>
                               </div>
                            </div>
@@ -1056,7 +1224,7 @@
                   </div> -->
                   <div class="about-text">
                      <p>
-                        Hi! We are 4 senior computer science students at the University of Alabama.    
+                        This page houses necessary instructions for modifying our application.    
                      </p>
                      <!-- <h3>Skills</h3>
                      <div class="skills">
