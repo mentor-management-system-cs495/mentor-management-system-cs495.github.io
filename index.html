@@ -1119,18 +1119,33 @@
                                     <img src="img/features/UserManualGIFs/Admin_Login.gif" alt="admin-login-gif">
                                  </div>
                                  <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Gregory is studying computer science and finance at the University of Alabama.
+                                    <h3>Where:</h3>
+                                    <p>Can be found when trying to access the Backend server. <br> (https://10.8.0.56:8000/admin/) 
                                     </p>
+                                    <h3>Purpose:</h3>
+                                    <p>To secure the admin dashboard and keep out unwanted users.
+                                    </p>
+                                    <h3>How to Use:</h3>
+                                    <ol>
+                                       <li>
+                                          <p>To use the admin dashboard, you will need to login using the admin login page. </p>
+                                       </li>
+                                       <li>
+                                          <p>The user credentials will be created on deployment of the application. The password is set in the .env file, and the username is set in the entrypoint.sh file</p>
+                                       </li>
+                                       <li>
+                                          <p>If the Admin credentials are entered incorrectly, the screen will display a standard error message. You have 3 attempts to log into the admin dashboard. </p>
+                                       </li>
+                                       <li>
+                                          <p>If you exceed 3 attempts, you will be locked out of the admin dashboard for 1 minute before the attempt resets. The lockout is based on computer IP address.</p>
+                                       </li>
+                                    </ol>
+                                    <h3>Additional Considerations:</h3>
+                                    <p>The cooldown period and attempt limit will be set in the development of the application and cannot be changed after deployment without redeploying the site. These features can be edited through the settings.py file. The cool off time is set by AXES_COOLOFF_TIME, and the limits are set through AXES_FAILURE_LIMIT (default is 3).  
+                                    </p>
+                                    <p>Documentation for Django Axes (what is used to implement login attempts) can be found in the Miscellaneous Documentation section in the How to Modify Page</p>
                                  </div>
-                                 <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="https://www.linkedin.com/in/gregory-nothnagel-unique-url" target="_blank">My LinkedIn</a>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="https://github.com/Gregory-S-Nothnagel" target="_blank">My Github</a>
-                                 </div>
+                                 
                               </div>
                            </div>
                         </div>
