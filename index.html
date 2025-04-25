@@ -1496,7 +1496,7 @@
             <div class="container">
                <div class="row">
                   <div class="section-title">
-                     <h2>How to Modify/Extend our Application</h2>
+                     <h2>FAQS</h2>
                   </div>
                </div>
                <div class="row">
@@ -1507,7 +1507,7 @@
                   </div> -->
                   <div class="about-text">
                      <p>
-                        Hi! We are 4 senior computer science students at the University of Alabama.    
+                        Click below to see answers to some commonly asked questions.    
                      </p>
                      <!-- <h3>Skills</h3>
                      <div class="skills">
@@ -1518,172 +1518,55 @@
                         <div class="skill-item">skill5</div>
                         <div class="skill-item">skill6</div>
                      </div> -->
-                     <div class="modify-tabs">
-                        <button type="button" class="tab-item-modify active" data-target="#howToChange">How to Make Changes?</button>
-                        <button type="button" class="tab-item-modify" data-target="#env">How to Modify Environmental Variables?</button>
-                        <button type="button" class="tab-item-modify" data-target="#technicalDetails">Technical Details</button>
-                        <button type="button" class="tab-item-modify" data-target="#projectBacklog">Backlog and Bug List</button>
-                        <button type="button" class="tab-item-modify" data-target="#styleExpectations">Style Expectations</button>
-                        <button type="button" class="tab-item-modify" data-target="#automatedTesting">Automated Testing</button>
+                     <button type="button" class="collapsible">QUESTION 1</button>
+                     <div class="contentFAQ">
+                        <p>Lorem ipsum...</p>
                      </div>
-                     <!-- Make Changes Section Start -->
-                     <div class="tab-content active" id="howToChange">
-                        <div class="timeline">
-                           <div class="row">
-                              <div class="contact-info">
-                                 <div class="contact-info-item">
-                                    <img src="img/hannah-headshot.png" alt="hannah-headshot">
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Hannah Hazelwood is a senior at the University of Alabama pursuing an undergraduate degree in computer science with a minor in mathematics.
-                                       She is also currently pursuing her MBA...
-                                    </p>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="#www.linkedin.com/in/hannah-hazelwood" target="_blank">My LinkedIn</a>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My Github!</h3>
-                                       <a href="#https://github.com/hhaze2" target="_blank">My Github</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                     <button type="button" class="collapsible">QUESTION 2</button>
+                     <div class="contentFAQ">
+                        <p>Lorem ipsum...</p>
                      </div>
-                     <!-- Make Changes Section End -->
-                     <!-- Environmental Variables Section Start -->
-                     <div class="tab-content" id="env">
-                        <div class="timeline">
-                           <div class="row">
-                              <div class="contact-info">
-                                 <div class="contact-info-item">
-                                    <img src="img/andy_headshot.JPG" alt="andrew-headshot">
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Andrew is a senior computer science major at the University of Alabama. He is currently pursuing both his bachelors and masters and is planning to graduate in May 2025.
-                                    </p>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="#https://github.com/ahahn1UA" target="_blank">https://github.com/ahahn1UA</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                     <button type="button" class="collapsible">QUESTION 3</button>
+                     <div class="contentFAQ">
+                        <p>Lorem ipsum...</p>
                      </div>
-                     <!-- Environmental Variables Section End -->
-                      <!-- Technical Details Section Start -->
-                     <div class="tab-content" id="technicalDetails">
-                        <div class="timeline">
-                           <div class="row">
-                              <div class="contact-info">
-                                 <div class="contact-info-item">
-                                    <img src="img/manjila-pic.jpeg" alt="manjila-headshot">
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>I am pursuing my Computer Science degree at the University of Alabama, along with the Accelerated Master's Program in Computer Science. I am interested in software development, data science and high-performance computing. </p>
-                                    </p>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="https://www.linkedin.com/in/manjilasingh/" target="_blank">My LinkedIn</a>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="https://github.com/manjilasingh" target="_blank">My Github</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                     <button type="button" class="collapsible">Common Problems</button>
+                     <div class="contentFAQ">
+                        <h3>Mentor cannot log in</h3>
+                        <p>See 'Mentor emails' subsection of additional potential issues section</p>
+                        <h3>During Development</h3>
+                        <h4>Cannot log into admin panel:</h4>
+                        <p>Clear cache, take down volumes, don't use https://localhost, use 127.0.0.1 instead</p>
+                        <h4>Error submitting meeting log or profile change on frontend</h4>
+                        <p>If you are logged into the admin panel on port 8000, you can't edit things like student profile at the same time on port 3000 in the same browser. You have to log out of admin panel temporarily, make the changes you want, then log back into the admin panel. </p>
+                        <h4>User login issues</h4>
+                        <p>The redirect URI 'https://127.0.0.1:8000/authapp/microsoft/callback/' specified in the request does not match the redirect URIs configured for the application...</p>
+                        <p>Solution: Add https://127.0.0.1:8000/authapp/microsoft/callback/ to the microsoft azure app registration's redirect URI's (see our documentation for How To Install Software -> External Resources Needed -> Microsoft Azure)</p>
                      </div>
-                     <!-- Technical Details Section End -->
-                      <!-- Backlog and Bug List Section Start -->
-                     <div class="tab-content" id="projectBacklog">
-                        <div class="timeline">
-                           <div class="row">
-                              <div class="contact-info">
-                                 <div class="contact-info-item">
-                                    <img src="img/hannah-headshot.png" alt="hannah-headshot">
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Hannah Hazelwood is a senior at the University of Alabama pursuing an undergraduate degree in computer science with a minor in mathematics.
-                                       She is also currently pursuing her MBA...
-                                    </p>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="#www.linkedin.com/in/hannah-hazelwood" target="_blank">My LinkedIn</a>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My Github!</h3>
-                                       <a href="#https://github.com/hhaze2" target="_blank">My Github</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                     <button type="button" class="collapsible">Other Potential Issues</button>
+                     <div class="contentFAQ">
+                        <h3>Mentor Emails</h3>
+                        <p>Currently, when the user (student or mentor) is logging in, in authapp.py (referring to the microsoft_callback() function in backauthapp/views.py), when the user's email is pulled to see whether they are in the database as a mentor or student, that search is case sensitive. This isn't usually a problem for student emails, but when you put mentors into the database, you have to make sure that their email has capitals where appropriate. Luckily, outlook shows the exact email as it needs to be entered into the database. So when you're putting mentors into the database, just search their name in outlook and take note of their exact email, including capitalization</p>
+                        <p>Also, if a mentor has an @cs.ua.edu email, that is most likely the email that should be in the database, even if they are logging in with @ua.edu. However to be sure, searching a mentor in Outlook will show the correct email needed. </p>
+                        <h3>Slow Student Retrieval</h3>
+                        <p>In the mentor view, when you try to view all your students, you may notice that it takes a long time for them to load. That's due to inefficient database querying, which we haven't had time to rectify ourselves.  </p>
+                        <p>[File: frontend/views/mentor-all-students.ejs, function: displayStudentCards] </p>
+                        <h3>Login on Different Browsers</h3>
+                        <p>Login works on: Chrome <br> Login does not work on: Safari <br> While other browsers may work, we recommend using Chrome for best performance.</p>
+                        <h3>verify=False in authapp/views.py</h3>
+                        <p>This makes it so that calls to the associated endpoint don't check for a .crt file. Allows man in the middle attacks, not of the whole frontend webpage, but of specific API endpoints. For instance, if the user wants to fetch mentor details, those mentor details can be spoofed, so they see the wrong mentor info pop up on their screen. </p>
+                        <br>
+                        <p>We tried to fix this by using volumes for the .crt and .key files in the docker-compose.yml so that the files would be copied to the directories where they would be used, which we think is on the right track, but it seems more needs to be done there.</p>
+                        
                      </div>
-                     <!-- Backlog and Bug List Section End -->
-                     <!-- Style Expectations Section Start -->
-                     <div class="tab-content" id="styleExpectations">
-                        <div class="timeline">
-                           <div class="row">
-                              <div class="contact-info">
-                                 <div class="contact-info-item">
-                                    <img src="img/andy_headshot.JPG" alt="andrew-headshot">
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Andrew is a senior computer science major at the University of Alabama. He is currently pursuing both his bachelors and masters and is planning to graduate in May 2025.
-                                    </p>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="#https://www.linkedin.com/in/andrew-hahn-355393231/" target="_blank">https://www.linkedin.com/in/andrew-hahn-355393231/</a>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="#https://github.com/ahahn1UA" target="_blank">https://github.com/ahahn1UA</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                     <button type="button" class="collapsible">External Resources</button>
+                     <div class="contentFAQ">
+                        <h3>PostgreSQL Bullseye version:</h3>
+                        <p> In our current server, we had to modify the postgreSQL version from 13 to 13-bullseye. The bullseye version was needed to remove errors in building the application. </p>
+                        <h3>Other Dependencies:</h3>
+                        <p> Some of the dependencies and libraries used may be updated or deprecated and might cause the application to need updates to work again. Currently, the versions used are working. However, on the current server, we had to move from Node 18 to Node 16, which has been deprecated. While this is the version that works on the server, this could cause issues in the future.</p>
                      </div>
-                     <!-- Style Expectations Section End -->
-                      <!-- Automated Testing Section Start -->
-                     <div class="tab-content" id="automatedTesting">
-                        <div class="timeline">
-                           <div class="row">
-                              <div class="contact-info">
-                                 <div class="contact-info-item">
-                                    <img src="img/manjila-pic.jpeg" alt="manjila-headshot">
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>I am pursuing my Computer Science degree at the University of Alabama, along with the Accelerated Master's Program in Computer Science. I am interested in software development, data science and high-performance computing. </p>
-                                    </p>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My LinkedIn</h3>
-                                    <a href="https://www.linkedin.com/in/manjilasingh/" target="_blank">My LinkedIn</a>
-                                 </div>
-                                 <div class="contact-info-item">
-                                    <h3>My Github</h3>
-                                       <a href="https://github.com/manjilasingh" target="_blank">My Github</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- Automated Testing Section End -->
+
                      <!-- <a href="cv.pdf" target="_blank" class="btn">Download CV</a>
                      <a href="#contact" class="btn link-item">Contact Me</a> -->
                   </div>
