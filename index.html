@@ -592,6 +592,7 @@
                         <button type="button" class="tab-item-feature" data-target="#viewDb">View Database</button>
                         <button type="button" class="tab-item-feature" data-target="#crud">CRUD Operations</button>
                         <button type="button" class="tab-item-feature" data-target="#csvUpload">CSV Batch Student Upload</button>
+                        <button type="button" class="tab-item-feature" data-target="#backup">Database Backup</button>
                      </div>
                      <!-- OAuth Section Start -->
                      <div class="tab-content active" id="oauthlogin">
@@ -1151,7 +1152,7 @@
                         </div>
                      </div>
                      <!-- Admin Login Section End -->
-                      <!-- View Database Section Start -->
+                     <!-- View Database Section Start -->
                      <div class="tab-content" id="viewDb">
                         <div class="timeline">
                            <div class="row">
@@ -1159,11 +1160,16 @@
                                  <div class="contact-info-item">
                                     <img src="img/features/UserManualGIFs/View_Database.gif" alt="view-db-gif">
                                  </div>
-                                 <!-- <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Gregory is studying computer science and finance at the University of Alabama.
+                                 <div class="contact-info-item">
+                                    <h3>Where:</h3>
+                                    <p>This is done in the Django Admin Dashboard, which is found at (https://10.8.0.56:8000/admin/myproject/)
                                     </p>
-                                 </div> -->
+                                    
+                                    </p>
+                                    <h3>How to Use:</h3>
+                                    <p>In the dashboard, click on any table to view it. You can view axes tables for login attemps, users to view the admins, and then you can view the mentor, student, mentorship and meeting log tables that are a part of our project.
+                                    </p>
+                                 </div>
                                  
                               </div>
                            </div>
@@ -1176,21 +1182,84 @@
                            <div class="row">
                               <div class="contact-info">
                                  <div class="contact-info-item">
+                                    <h3>Where</h3>
+                                    <p>This is done in the Django Admin Dashboard, which is found at (https://10.8.0.56:8000/admin/myproject/) 
+                                    </p>
+                                    <h3>Purpose:</h3>
+                                    <p>To manage and make changes to the database to store information about mentors and students 
+                                    </p>
+                                 </div>
+                                 <div class="contact-info-item">
                                     <!-- <img src="img/gregory-headshot.jpg" alt="gregory-headshot"> -->
                                      <h3>Create (Add)</h3>
                                      <img src="img/features/add.png" alt="add-img">
+                                     <ol>
+                                       <li>
+                                          <p>Navitate to the table you want to add an entry to</p>
+                                       </li>
+                                       <li>
+                                          <p>In the top right corner, click the add button (for example, the “ADD MEETING LOG+” button in the meeting log table).</p>
+                                       </li>
+                                       <li>
+                                          <p>This will open a form to fill out the attributes for that entry. The optional attributes will be grayed out. For example, see the student table add student form that has the words “minor” and “preferred name” in gray.</p>
+                                          <p>To cancel, click the back arrow or the table tab on the left to return to the original table</p>
+                                       </li>
+                                       <li>
+                                          <p>Once the information is in, click SAVE to save the student, “save and add another” to reopen the same form to add a second entry, or “save and continue editing” to add the entry to the table but keep the form open to make edits to the entry.</p>
+                                       </li>
+                                     </ol>
                                      <h3>Retrieve (Search)</h3>
                                      <img src="img/features/search.png" alt="search-img">
+                                     <ol>
+                                       <li>
+                                          <p>Navitate to the table you want to find an entry in</p>
+                                       </li>
+                                       <li>
+                                          <p>The mentor, meeting log, and student tables have a search bar at the top of the table. You can type anything in this, and it will pull up any entries that contain this text in any of their rows. For example, if you search for a name, it will pull up the entry that matches that name. If you search for “Computer Science” it will pull up any students that have computer science as their major/minor.</p>
+                                       </li>
+                                       <li>
+                                          <p>Note that the meeting log table can also be filtered. In the right of the table, there is a Filter section, where you can filter by meeting date and choose a restriction of how recent of entries you want to see.</p>
+                                       </li>
+                                       <li>
+                                          <p>Note that the mentorship table does not have search functionality. With many mentorship relationships, this may be confusing, so you can use CTRL F (or CMD F on mac) to type a student name and pull up their entry.</p>
+                                       </li>
+                                     </ol>
                                      <h3>Update (Edit)</h3>
                                      <img src="img/features/Edit.png" alt="edit-img">
+                                     <ol>
+                                       <li>
+                                          <p>Navitate to the table you want to update an entry from</p>
+                                       </li>
+                                       <li>
+                                          <p>Find the entry you want to update, then click the blue ID number for that entry. This will open up a form with all of the fields for that entry. It will be filled with the current values for each field.</p>
+                                       </li>
+                                       <li>
+                                          <p>Make any necessary changes, then, like the add functionality, click either “save,” “save and add another,” or “save and continue editing.”</p>
+                                       </li>
+                                       <li>
+                                          <p>There is also a change history for entries that have been changed. Click on the “History” button on the top right of the edit form, and it will show the past edits to that entry, showing what was changed, who made the change, and the date the change was made. It will not show the past value of the change, however. </p>
+                                       </li>
+                                     </ol>
                                      <h3>Delete</h3>
                                      <img src="img/features/delete.png" alt="delete-img">
+                                     <ol>
+                                       <li>
+                                          <p>Navitate to the table you want to delete an entry from</p>
+                                       </li>
+                                       <li>
+                                          <p>Click on the check box to the left of an entry's ID </p>
+                                       </li>
+                                       <li>
+                                          <p>Click the dropdown below the search bar and above the table title. Select “Delete Selected {Students/Mentors/MeetingLogs/Mentorships}”</p>
+                                       </li>
+                                       <li>
+                                          <p>Click the go button </p>
+                                       </li>
+                                       <li>
+                                          <p>It will ask if you are sure and will show any other entries that will be deleted on cascade. Select yes if sure, or cancel if you no longer wish to delete. </p>
+                                       </li>
+                                     </ol>
                                  </div>
-                                 <!-- <div class="contact-info-item">
-                                    <h3>Bio</h3>
-                                    <p>Gregory is studying computer science and finance at the University of Alabama.
-                                    </p>
-                                 </div> -->
                                  
                               </div>
                            </div>
@@ -1257,6 +1326,30 @@
                         </div>
                      </div>
                      <!-- CSV Batch Upload Section End -->
+                     <!-- Backup Section Start -->
+                     <div class="tab-content" id="backup">
+                        <div class="timeline">
+                           <div class="row">
+                              <div class="contact-info">
+                                 <div class="contact-info-item">
+                                    <h3>Backup Video Link (need to login to box): <a href="https://alabama.box.com/s/hrzr0kipv2ntnzhvmd9b3pr8r2ai8fc4" target="_blank">UA Box Backup Demo Video</a></h3>
+                                 </div>
+                                 <div class="contact-info-item">
+                                    <h3>Where:</h3>
+                                    <p>This is NOT done on the website. This is done on the server that the container is currently running on in the terminal
+                                    </p>
+                                    
+                                    </p>
+                                    <h3>How to Use:</h3>
+                                    <p>This is not done in Django admin panel. Backup.sh and restore.sh are in the project root directory. To backup the current database state, just ssh into the server, navigate to that directory, and run the command “bash backup.sh” (you might have to use sudo). To restore the most recent backup, run “bash restore.sh”. To restore a specific backup from the backups/ folder in the same directory, run “bash restore.sh backup_file_name.sql” 
+                                    </p>
+                                 </div>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- View Database Section End -->
                      <!-- <a href="cv.pdf" target="_blank" class="btn">Download CV</a>
                      <a href="#contact" class="btn link-item">Contact Me</a> -->
                   </div>
@@ -1567,17 +1660,17 @@
                         <div class="skill-item">skill5</div>
                         <div class="skill-item">skill6</div>
                      </div> -->
-                     <button type="button" class="collapsible">QUESTION 1 - Coming soon</button>
+                     <button type="button" class="collapsible">How can I add another field to any of the tables in the database?</button>
                      <div class="contentFAQ">
-                        <p>Coming soon...</p>
+                        <p>You need to change the init.sql file where the table is defined, edit the models.py file and edit the admin.py file. Then before rebuilding the container, you need to delete the volume and the container or else the init.sql changes will not process since the volume will think the init.sql file is already present.</p>
                      </div>
-                     <button type="button" class="collapsible">QUESTION 2 - coming soon</button>
+                     <button type="button" class="collapsible">How do I add assistant admins? </button>
                      <div class="contentFAQ">
-                        <p>coming soon...</p>
+                        <p>You can create another admin user in django admin and assign them a group with certain permissions as well as give them individual permissions. Currently there's a single superuser, which you can change the email of in backend/entrypoint.sh. .</p>
                      </div>
-                     <button type="button" class="collapsible">QUESTION 3 - coming soon</button>
+                     <button type="button" class="collapsible">When should I use the database backup feature? </button>
                      <div class="contentFAQ">
-                        <p>coming soon...</p>
+                        <p>We recommend backing up whenever you're about to import a new batch of students. If the .csv file for the new students isn't formatted properly, things could go wrong during the upload, so it's a good idea to have the database backed up just in case. In general, whenever you're going to go in and do something as an admin, you'll probably want to backup to be safe.</p>
                      </div>
                      <button type="button" class="collapsible">Common Problems</button>
                      <div class="contentFAQ">
